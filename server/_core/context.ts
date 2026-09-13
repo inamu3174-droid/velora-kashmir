@@ -1,0 +1,11 @@
+import type { CreateExpressContextOptions } from "@trpc/server/adapters/express";
+
+export async function createContext({ req, res }: CreateExpressContextOptions) {
+  return {
+    req,
+    res,
+    user: null as { id: string; email: string } | null,
+  };
+}
+
+export type Context = Awaited<ReturnType<typeof createContext>>;
