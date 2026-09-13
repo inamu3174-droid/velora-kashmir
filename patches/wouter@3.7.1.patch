@@ -1,0 +1,7 @@
+diff --git a/node_modules/wouter/esm/index.js b/node_modules/wouter/esm/index.js
+index 1234567..abcdefg 100644
+--- a/node_modules/wouter/esm/index.js
++++ b/node_modules/wouter/esm/index.js
+@@ -1,5 +1,6 @@
+ // Patch for wouter compatibility
+ export * from "./index.js";
