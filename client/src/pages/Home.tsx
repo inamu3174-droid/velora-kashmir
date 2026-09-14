@@ -19,6 +19,10 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_NUMBER = "919999999999"; // Replace with the brand's live WhatsApp number.
+const LOGO_CIRCLE = "https://litter.catbox.moe/fdtgr6.png";
+const LOGO_GOLD = "https://litter.catbox.moe/4g78wy.png";
+const LOGO_DARK = "https://litter.catbox.moe/f2twec.png";
+const LOGO_GOLD_DARK = "https://litter.catbox.moe/glo59b.png";
 const KAHWA_IMG = "https://litter.catbox.moe/9ehhmf.jpg";
 
 const products = [
@@ -236,7 +240,7 @@ export default function Home() {
   const [activeProduct, setActiveProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), 1050);
+    const timer = window.setTimeout(() => setLoading(false), 1200);
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
@@ -250,14 +254,21 @@ export default function Home() {
   return (
     <>
       <div className={`loading-screen ${loading ? "is-visible" : "is-hidden"}`} aria-hidden={!loading}>
-        <div className="loader-mark"><span>B</span><i /></div>
-        <div className="loader-wordmark">BELYN</div>
+        <div className="loader-logo-wrap">
+          <img src={LOGO_CIRCLE} alt="Belyn" className="loader-logo" />
+        </div>
         <div className="loader-caption">KASHMIR CLOSER</div>
         <div className="loader-line"><span /></div>
       </div>
 
       <header className={`site-nav ${scrolled ? "is-scrolled" : ""}`}>
-        <a href="#top" className="wordmark" onClick={closeMenu} aria-label="BELYN home">BELYN<span>®</span></a>
+        <a href="#top" className="logo-link" onClick={closeMenu} aria-label="BELYN home">
+          <img
+            src={scrolled ? LOGO_DARK : LOGO_GOLD}
+            alt="Belyn — Kashmir Closer"
+            className="nav-logo"
+          />
+        </a>
         <nav className={`nav-links ${menuOpen ? "is-open" : ""}`} aria-label="Main navigation">
           <a href="#top" onClick={closeMenu}>Home</a>
           <a href="#collection" onClick={closeMenu}>Shop</a>
@@ -343,7 +354,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-top">
-          <a href="#top" className="footer-wordmark">BELYN<span>®</span></a>
+          <a href="#top" className="footer-logo-link" aria-label="BELYN home"><img src={LOGO_DARK} alt="Belyn" className="footer-logo" /></a>
           <p>Kashmir closer.</p>
           <a href="#top" className="back-top">Back to top <ArrowUpRight size={15} /></a>
         </div>
