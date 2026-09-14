@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_NUMBER = "919999999999"; // Replace with the brand's live WhatsApp number.
+const KAHWA_IMG = "https://litter.catbox.moe/9ehhmf.jpg";
 
 const products = [
   {
@@ -31,7 +32,7 @@ const products = [
     origin: "Bijbehara, Anantnag, Kashmir",
     sizes: ["250 g", "325 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "honey",
     tags: ["No added sugar", "Natural character", "Raw honey"],
   },
@@ -46,7 +47,7 @@ const products = [
     origin: "Bijbehara, Anantnag, Kashmir",
     sizes: ["250 g", "325 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "honey",
     tags: ["Raw Sulai honey", "Natural character", "Distinctive flavour"],
   },
@@ -61,7 +62,7 @@ const products = [
     origin: "Bijbehara, Anantnag, Kashmir",
     sizes: ["250 g", "325 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "honey",
     tags: ["Multiflora", "Raw forest honey", "Natural character"],
   },
@@ -76,7 +77,7 @@ const products = [
     origin: "Kashmir",
     sizes: ["1 g", "2 g", "3 g", "4 g", "5 g"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "saffron",
     tags: ["Crocus sativus", "Seasonal harvest", "Pure strands"],
   },
@@ -91,7 +92,7 @@ const products = [
     origin: "Kashmir",
     sizes: ["100 g", "200 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "kahwa",
     tags: ["Contains almonds", "Traditional blend", "Saffron"],
   },
@@ -106,7 +107,7 @@ const products = [
     origin: "Kashmir",
     sizes: ["250 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "almond",
     tags: ["Tree nuts", "Natural oils", "Protein"],
   },
@@ -121,7 +122,7 @@ const products = [
     origin: "Kashmir",
     sizes: ["250 g", "500 g", "1 kg"],
     price: "Enquire",
-    image: "/images/velora-kahwa.jpg",
+    image: KAHWA_IMG,
     tone: "walnut",
     tags: ["Omega-3", "Tree nuts", "Healthy fats"],
   },
@@ -269,7 +270,7 @@ export default function Home() {
 
       <main id="top">
         <section className="hero-section">
-          <div className="hero-image" aria-hidden="true"><img src="/images/velora-kahwa.jpg" alt="" /></div>
+          <div className="hero-image" aria-hidden="true"><img src={KAHWA_IMG} alt="" /></div>
           <div className="hero-overlay" />
           <div className="hero-noise" />
           <div className="hero-content container">
@@ -284,7 +285,7 @@ export default function Home() {
               <div className="hero-scroll"><span>Scroll to discover</span><div className="scroll-track"><span /></div></div>
             </div>
           </div>
-          <div className="hero-footer container"><span>Bijbehara · Anantnag · J&amp;K</span><span>Est. for the everyday ritual</span></div>
+          <div className="hero-footer container"><span>Bijbehara · Anantnag · J&K</span><span>Est. for the everyday ritual</span></div>
         </section>
 
         <section className="statement-section section-shell" id="story">
@@ -312,7 +313,7 @@ export default function Home() {
         </section>
 
         <section className="kashmir-section" id="kashmir">
-          <div className="kashmir-image"><img src="/images/velora-kahwa.jpg" alt="A steaming cup of Kashmiri Kahwa beside a brass pot" loading="lazy" /></div>
+          <div className="kashmir-image"><img src={KAHWA_IMG} alt="A steaming cup of Kashmiri Kahwa beside a brass pot" loading="lazy" /></div>
           <div className="kashmir-overlay" />
           <div className="container kashmir-content">
             <Reveal><p className="eyebrow light"><span className="eyebrow-dot" /> A sense of place</p><h2>Rooted in Kashmir.<br /><em>Made for everywhere.</em></h2><p className="kashmir-body">From Bijbehara in Anantnag, we look outward — bringing a considered part of Kashmir to tables beyond the valley, while keeping its sense of place at the heart of everything we do.</p><a className="pill-button pill-button--light" href="#why-belyn">Why BELYN <ArrowRight size={15} /></a></Reveal>
@@ -336,7 +337,7 @@ export default function Home() {
 
         <section className="quote-section section-shell"><div className="container quote-wrap"><Reveal><p className="section-number">04 / The ritual</p><h2><span>Honey.</span> <span>Saffron.</span><br /><span>Kahwa.</span> <em>Dry fruits.</em></h2><div className="quote-bottom"><p>The pantry of Kashmir,<br />in its most beautiful form.</p><div className="quote-mark">“</div></div></Reveal></div></section>
 
-        <section className="contact-section" id="contact"><div className="container contact-grid"><Reveal><p className="section-number light-number">05 / Come closer</p><h2>Let's make<br /><em>something warm.</em></h2><p className="contact-copy">Have a question, a gifting idea, or simply want to say hello? BELYN is a message away.</p><WhatsAppButton /></Reveal><Reveal className="contact-card"><div className="contact-card-top"><span className="contact-dot" /><span>Find us here</span></div><div className="contact-location"><MapPin size={20} strokeWidth={1.3} /><div><strong>Bijbehara, Anantnag</strong><span>Jammu &amp; Kashmir, India</span></div></div><div className="contact-hours"><Clock3 size={18} strokeWidth={1.3} /><span>Usually replying between<br />10:00 — 18:00 IST</span></div><div className="contact-social"><a href="#top" aria-label="BELYN on Instagram"><Instagram size={18} /></a><a href="#top" aria-label="BELYN social link"><ArrowUpRight size={17} /></a></div></Reveal></div></section>
+        <section className="contact-section" id="contact"><div className="container contact-grid"><Reveal><p className="section-number light-number">05 / Come closer</p><h2>Let's make<br /><em>something warm.</em></h2><p className="contact-copy">Have a question, a gifting idea, or simply want to say hello? BELYN is a message away.</p><WhatsAppButton /></Reveal><Reveal className="contact-card"><div className="contact-card-top"><span className="contact-dot" /><span>Find us here</span></div><div className="contact-location"><MapPin size={20} strokeWidth={1.3} /><div><strong>Bijbehara, Anantnag</strong><span>Jammu & Kashmir, India</span></div></div><div className="contact-hours"><Clock3 size={18} strokeWidth={1.3} /><span>Usually replying between<br />10:00 — 18:00 IST</span></div><div className="contact-social"><a href="#top" aria-label="BELYN on Instagram"><Instagram size={18} /></a><a href="#top" aria-label="BELYN social link"><ArrowUpRight size={17} /></a></div></Reveal></div></section>
       </main>
 
       <footer className="site-footer"><div className="container footer-top"><a href="#top" className="footer-wordmark">BELYN<span>®</span></a><p>Kashmir closer.</p><a href="#top" className="back-top">Back to top <ArrowUpRight size={15} /></a></div><div className="container footer-bottom"><span>© 2026 BELYN. Bijbehara, Anantnag – 192124 · FSSAI 21026017000306</span><span>Made with care in Kashmir</span><span>Honey · Saffron · Kahwa · Dry fruits</span></div></footer>
