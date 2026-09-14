@@ -7,7 +7,7 @@ export default function Privacy() {
     <div className="legal-page">
       <header className="legal-header">
         <div className="container legal-header-inner">
-          <Link href="/" className="wordmark">BELYN<span>®</span></Link>
+          <Link href="/" className="logo-link" aria-label="BELYN home"><img src="https://litter.catbox.moe/f2twec.png" alt="Belyn" className="nav-logo" /></Link>
           <Link href="/" className="legal-back"><ArrowLeft size={15} /> Back to home</Link>
         </div>
       </header>
