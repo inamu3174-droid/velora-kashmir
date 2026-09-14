@@ -31,7 +31,7 @@ const products = [
     origin: "Kashmir, Jammu & Kashmir",
     sizes: ["250 g", "500 g", "1 kg"],
     price: "₹799",
-    image: "/manus-storage/velora-honey_a65ee6c1.jpg",
+    image: "/images/velora-kahwa.jpg",
     tone: "honey",
     tags: ["Natural", "Pure", "Kashmiri origin"],
   },
@@ -46,7 +46,7 @@ const products = [
     origin: "Kashmir, Jammu & Kashmir",
     sizes: ["1 g", "2 g", "5 g"],
     price: "₹499",
-    image: "/manus-storage/velora-saffron_f7af1242.jpg",
+    image: "/images/velora-kahwa.jpg",
     tone: "saffron",
     tags: ["Rich aroma", "Carefully sourced", "Premium strands"],
   },
@@ -61,7 +61,7 @@ const products = [
     origin: "Kashmir, Jammu & Kashmir",
     sizes: ["250 g", "500 g", "1 kg"],
     price: "₹899",
-    image: "/manus-storage/velora-dryfruits_28d631fc.jpg",
+    image: "/images/velora-kahwa.jpg",
     tone: "almond",
     tags: ["Crunchy", "Premium grade", "Gift ready"],
   },
@@ -76,7 +76,7 @@ const products = [
     origin: "Kashmir, Jammu & Kashmir",
     sizes: ["50 g", "100 g", "250 g"],
     price: "₹649",
-    image: "/manus-storage/velora-kahwa_4a7793cd.jpg",
+    image: "/images/velora-kahwa.jpg",
     tone: "kahwa",
     tags: ["Saffron notes", "Traditional blend", "Everyday ritual"],
   },
@@ -235,7 +235,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image" aria-hidden="true">
-            <img src="/manus-storage/velora-hero_91c1fc37.jpg" alt="" />
+            <img src="/images/velora-kahwa.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -278,7 +278,7 @@ export default function Home() {
             </ul>
           </Reveal>
           <Reveal className="kashmir-image">
-            <img src="/manus-storage/velora-kahwa_4a7793cd.jpg" alt="A steaming cup of Kashmiri Kahwa beside a brass pot" loading="lazy" />
+            <img src="/images/velora-kahwa.jpg" alt="A steaming cup of Kashmiri Kahwa beside a brass pot" loading="lazy" />
           </Reveal>
         </div>
       </section>
