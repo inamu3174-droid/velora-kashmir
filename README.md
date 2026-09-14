@@ -1,48 +1,53 @@
-# VELORA — From Kashmir, Closer to You
+# BELYN — Kashmir Closer
 
-Premium brand website for authentic Kashmiri honey, saffron, dry fruits and Kahwa.
+A modern Kashmiri pantry. Honey, saffron, Kahwa and dry fruits closer to the source.
 
-## Tech Stack
+**Bijbehara · Anantnag · J&K**
+
+## Brand
+
+BELYN brings the natural character of Kashmir closer to the modern table — thoughtfully sourced, carefully handled, nothing overdone.
+
+## Collection
+
+- White Honey (Acacia Flora)
+- Sulai Butter Honey
+- Forest Honey
+- Raw Mongra Saffron
+- Kahwa (Saffron Mist Blend)
+- Raw Almonds
+- Walnut Kernels
+
+## Stack
 
 - React 19 + Vite + TypeScript
-- Tailwind CSS 4 + shadcn/ui
-- Express + tRPC
-- Drizzle ORM
+- Tailwind CSS 4
+- Express + tRPC (optional backend)
 
-## Getting Started
+## Run locally
 
 ```bash
-# Install dependencies
 pnpm install
-# or
-npm install --legacy-peer-deps
-
-# Start development server
+# or: npm install --legacy-peer-deps
 pnpm dev
-# or
-npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open http://localhost:3000
 
-## Project Structure
+## Deploy (Vercel)
 
-```
-client/          # React frontend
-  src/
-    pages/       # Home (main landing), NotFound
-    components/  # UI + custom components
-    ...
-server/          # Express + tRPC backend
-shared/          # Shared types & constants
-drizzle/         # Database schema
-```
+- Build command: `npx vite build`
+- Output directory: `dist/public`
+- Install: `npm install --legacy-peer-deps`
+
+See `vercel.json`.
 
 ## Notes
 
-- Product images currently reference `/manus-storage/...`. Replace with your own assets.
-- WhatsApp number is a placeholder in `client/src/pages/Home.tsx` — update it.
-- Some advanced Manus platform features (LLM, voice, etc.) are simplified or stubbed.
+- Set your live WhatsApp number in `client/src/pages/Home.tsx` (`WHATSAPP_NUMBER`).
+- Add product images under `client/public/images/`.
+- FSSAI License No.: 21026017000306
+- Address: Kashmir, Bijbehara, Anantnag – 192124
 
 ## License
 
