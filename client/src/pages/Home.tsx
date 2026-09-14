@@ -1,3 +1,4 @@
+import "../legal.css";
 import { useEffect, useState } from "react";
 import {
   ArrowDown,
@@ -340,7 +341,25 @@ export default function Home() {
         <section className="contact-section" id="contact"><div className="container contact-grid"><Reveal><p className="section-number light-number">05 / Come closer</p><h2>Let's make<br /><em>something warm.</em></h2><p className="contact-copy">Have a question, a gifting idea, or simply want to say hello? BELYN is a message away.</p><WhatsAppButton /></Reveal><Reveal className="contact-card"><div className="contact-card-top"><span className="contact-dot" /><span>Find us here</span></div><div className="contact-location"><MapPin size={20} strokeWidth={1.3} /><div><strong>Bijbehara, Anantnag</strong><span>Jammu & Kashmir, India</span></div></div><div className="contact-hours"><Clock3 size={18} strokeWidth={1.3} /><span>Usually replying between<br />10:00 — 18:00 IST</span></div><div className="contact-social"><a href="#top" aria-label="BELYN on Instagram"><Instagram size={18} /></a><a href="#top" aria-label="BELYN social link"><ArrowUpRight size={17} /></a></div></Reveal></div></section>
       </main>
 
-      <footer className="site-footer"><div className="container footer-top"><a href="#top" className="footer-wordmark">BELYN<span>®</span></a><p>Kashmir closer.</p><a href="#top" className="back-top">Back to top <ArrowUpRight size={15} /></a></div><div className="container footer-bottom"><span>© 2026 BELYN. Bijbehara, Anantnag – 192124 · FSSAI 21026017000306</span><span>Made with care in Kashmir</span><span>Honey · Saffron · Kahwa · Dry fruits</span></div></footer>
+      <footer className="site-footer">
+        <div className="container footer-top">
+          <a href="#top" className="footer-wordmark">BELYN<span>®</span></a>
+          <p>Kashmir closer.</p>
+          <a href="#top" className="back-top">Back to top <ArrowUpRight size={15} /></a>
+        </div>
+        <div className="container footer-links">
+          <a href="#collection">Shop</a>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Contact</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms & Conditions</a>
+        </div>
+        <div className="container footer-bottom">
+          <span>© 2026 BELYN. Bijbehara, Anantnag – 192124 · FSSAI 21026017000306</span>
+          <span>Made with care in Kashmir</span>
+          <span>Honey · Saffron · Kahwa · Dry fruits</span>
+        </div>
+      </footer>
 
       {activeProduct && <ProductModal product={activeProduct} onClose={() => setActiveProduct(null)} />}
     </>
